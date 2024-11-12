@@ -1,11 +1,14 @@
 package com.springBootFramework.controllers;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class AddBookResponse {
+public class Response {
 	@Id
+	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String id;
 	private String msg;
 	public String getId() {

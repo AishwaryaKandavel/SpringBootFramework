@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 @Table(name="library")
 public class Storage {
 	@Column(name="book_name")
-	private String book_name;
+	private String book;
 	@Id
 	@Column(name="id")
 	private String id;
@@ -20,11 +20,11 @@ public class Storage {
 	@Column(name="author")
 	private String author;
 	
-	public String getBook_name() {
-		return book_name;
+	public String getBook() {
+		return book;
 	}
-	public void setBook_name(String book_name) {
-		this.book_name = book_name;
+	public void setBook(String book) {
+		this.book = book;
 	}
 	public String getId() {
 		return id;
