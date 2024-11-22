@@ -1,165 +1,402 @@
-2024-11-21T17:52:49.747Z  INFO 24880 --- [spring] [main] c.springBootFramework.ApplicationTests   : Starting ApplicationTests using Java 17.0.7 with PID 24880 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
-2024-11-21T17:52:49.762Z  INFO 24880 --- [spring] [main] c.springBootFramework.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-11-21T17:52:51.028Z  INFO 24880 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-21T17:52:51.146Z  INFO 24880 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
-2024-11-21T17:52:54.584Z  INFO 24880 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-21T17:52:54.785Z  INFO 24880 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-21T17:52:54.908Z  INFO 24880 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-21T17:52:55.279Z  INFO 24880 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-21T17:52:55.371Z  INFO 24880 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-21T17:52:56.090Z  INFO 24880 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e7b3e54
-2024-11-21T17:52:56.095Z  INFO 24880 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-21T17:52:56.274Z  WARN 24880 --- [spring] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-21T17:52:58.063Z  INFO 24880 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-21T17:52:58.175Z  INFO 24880 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T17:52:58.630Z  WARN 24880 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-21T17:52:59.512Z  INFO 24880 --- [spring] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-11-21T17:52:59.513Z  INFO 24880 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-11-21T17:52:59.519Z  INFO 24880 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
-2024-11-21T17:52:59.596Z  INFO 24880 --- [spring] [main] c.springBootFramework.ApplicationTests   : Started ApplicationTests in 10.495 seconds (process running for 12.761)
-2024-11-21T17:53:00.130Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Enter valid inputs
-2024-11-21T17:53:00.246Z  WARN 24880 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.springBootFramework.controllers.Response> com.springBootFramework.controllers.LibraryController.addBook(com.springBootFramework.controllers.Storage)]
-2024-11-21T17:53:00.351Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Invalid characters in ID(can contain [a-zA-Z0-9]
-2024-11-21T17:53:00.391Z  WARN 24880 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.springBootFramework.controllers.LibraryController.updateBook(java.lang.String,com.springBootFramework.controllers.Storage)]
-2024-11-21T17:53:00.423Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.585Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.596Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.600Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.619Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book already exists and creation is skipped
-2024-11-21T17:53:00.637Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Invalid characters in ID(can contain [a-zA-Z0-9]
-2024-11-21T17:53:00.650Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.654Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.664Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Invalid characters in ID(can contain [a-zA-Z0-9]
-2024-11-21T17:53:00.712Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist and Book is created
-2024-11-21T17:53:00.759Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.769Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:53:00.796Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Invalid characters in ID(can contain [a-zA-Z0-9]
-2024-11-21T17:53:00.809Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Book/isbn/author/aisle values are empty or check your request
-2024-11-21T17:53:00.823Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Invalid characters in ID(can contain [a-zA-Z0-9]
-2024-11-21T17:53:00.844Z  INFO 24880 --- [spring] [main] c.s.controllers.LibraryController        : Invalid characters in ID(can contain [a-zA-Z0-9]
-2024-11-21T17:53:00.872Z  INFO 24880 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T17:53:00.897Z  INFO 24880 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-21T17:53:00.921Z  INFO 24880 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-21T17:56:12.153Z  INFO 5124 --- [spring] [main] c.springBootFramework.ApplicationTests   : Starting ApplicationTests using Java 17.0.7 with PID 5124 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
-2024-11-21T17:56:12.157Z  INFO 5124 --- [spring] [main] c.springBootFramework.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-11-21T17:56:13.337Z  INFO 5124 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-21T17:56:13.444Z  INFO 5124 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
-2024-11-21T17:56:16.345Z  INFO 5124 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-21T17:56:16.504Z  INFO 5124 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-21T17:56:16.622Z  INFO 5124 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-21T17:56:16.951Z  INFO 5124 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-21T17:56:17.038Z  INFO 5124 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-21T17:56:17.693Z  INFO 5124 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75c77add
-2024-11-21T17:56:17.699Z  INFO 5124 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-21T17:56:17.793Z  WARN 5124 --- [spring] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-21T17:56:19.198Z  INFO 5124 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-21T17:56:19.275Z  INFO 5124 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T17:56:19.621Z  WARN 5124 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-21T17:56:20.456Z  INFO 5124 --- [spring] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-11-21T17:56:20.457Z  INFO 5124 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-11-21T17:56:20.459Z  INFO 5124 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2024-11-21T17:56:20.526Z  INFO 5124 --- [spring] [main] c.springBootFramework.ApplicationTests   : Started ApplicationTests in 8.969 seconds (process running for 10.891)
-2024-11-21T17:56:21.019Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Enter valid inputs
-2024-11-21T17:56:21.128Z  WARN 5124 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.springBootFramework.controllers.Response> com.springBootFramework.controllers.LibraryController.addBook(com.springBootFramework.controllers.Storage)]
-2024-11-21T17:56:21.222Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book updated successfully
-2024-11-21T17:56:21.250Z  WARN 5124 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.springBootFramework.controllers.LibraryController.updateBook(java.lang.String,com.springBootFramework.controllers.Storage)]
-2024-11-21T17:56:21.270Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.403Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.418Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.423Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.441Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book already exists and creation is skipped
-2024-11-21T17:56:21.458Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.472Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.483Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.493Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
-2024-11-21T17:56:21.506Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist and Book is created
-2024-11-21T17:56:21.553Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.562Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:56:21.592Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book/isbn/author/aisle values are empty or check your request
-2024-11-21T17:56:21.607Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist
-2024-11-21T17:56:21.624Z  INFO 5124 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
-2024-11-21T17:56:21.651Z  INFO 5124 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T17:56:21.656Z  INFO 5124 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-21T17:56:21.679Z  INFO 5124 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-21T17:57:28.050Z  INFO 28116 --- [spring] [main] c.springBootFramework.ApplicationTests   : Starting ApplicationTests using Java 17.0.7 with PID 28116 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
-2024-11-21T17:57:28.056Z  INFO 28116 --- [spring] [main] c.springBootFramework.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-11-21T17:57:29.460Z  INFO 28116 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-21T17:57:29.586Z  INFO 28116 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
-2024-11-21T17:57:33.136Z  INFO 28116 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-21T17:57:33.393Z  INFO 28116 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-21T17:57:33.509Z  INFO 28116 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-21T17:57:33.963Z  INFO 28116 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-21T17:57:34.087Z  INFO 28116 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-21T17:57:34.826Z  INFO 28116 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b2f7527
-2024-11-21T17:57:34.831Z  INFO 28116 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-21T17:57:34.921Z  WARN 28116 --- [spring] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-21T17:57:36.433Z  INFO 28116 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-21T17:57:36.536Z  INFO 28116 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T17:57:36.920Z  WARN 28116 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-21T17:57:38.065Z  INFO 28116 --- [spring] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-11-21T17:57:38.068Z  INFO 28116 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-11-21T17:57:38.071Z  INFO 28116 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
-2024-11-21T17:57:38.169Z  INFO 28116 --- [spring] [main] c.springBootFramework.ApplicationTests   : Started ApplicationTests in 10.859 seconds (process running for 13.2)
-2024-11-21T17:57:38.850Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Enter valid inputs
-2024-11-21T17:57:38.964Z  WARN 28116 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.springBootFramework.controllers.Response> com.springBootFramework.controllers.LibraryController.addBook(com.springBootFramework.controllers.Storage)]
-2024-11-21T17:57:39.054Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book updated successfully
-2024-11-21T17:57:39.087Z  WARN 28116 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.springBootFramework.controllers.LibraryController.updateBook(java.lang.String,com.springBootFramework.controllers.Storage)]
-2024-11-21T17:57:39.111Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.232Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.250Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.252Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.277Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book already exists and creation is skipped
-2024-11-21T17:57:39.299Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.319Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.329Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.347Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
-2024-11-21T17:57:39.365Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist and Book is created
-2024-11-21T17:57:39.399Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.406Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T17:57:39.425Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book/isbn/author/aisle values are empty or check your request
-2024-11-21T17:57:39.431Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist
-2024-11-21T17:57:39.451Z  INFO 28116 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
-2024-11-21T17:57:39.479Z  INFO 28116 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T17:57:39.482Z  INFO 28116 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-21T17:57:39.501Z  INFO 28116 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-11-21T18:09:46.572Z  INFO 29532 --- [spring] [main] c.springBootFramework.ApplicationTests   : Starting ApplicationTests using Java 17.0.7 with PID 29532 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
-2024-11-21T18:09:46.576Z  INFO 29532 --- [spring] [main] c.springBootFramework.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-11-21T18:09:47.690Z  INFO 29532 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-21T18:09:47.802Z  INFO 29532 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
-2024-11-21T18:09:50.634Z  INFO 29532 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-21T18:09:50.822Z  INFO 29532 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-21T18:09:50.926Z  INFO 29532 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-21T18:09:51.248Z  INFO 29532 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-21T18:09:51.346Z  INFO 29532 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-21T18:09:52.002Z  INFO 29532 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4bfe83d
-2024-11-21T18:09:52.006Z  INFO 29532 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-21T18:09:52.109Z  WARN 29532 --- [spring] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-21T18:09:53.729Z  INFO 29532 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-21T18:09:53.827Z  INFO 29532 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T18:09:54.190Z  WARN 29532 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-21T18:09:55.018Z  INFO 29532 --- [spring] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-11-21T18:09:55.019Z  INFO 29532 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-11-21T18:09:55.022Z  INFO 29532 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
-2024-11-21T18:09:55.088Z  INFO 29532 --- [spring] [main] c.springBootFramework.ApplicationTests   : Started ApplicationTests in 9.095 seconds (process running for 11.019)
-2024-11-21T18:09:55.552Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Enter valid inputs
-2024-11-21T18:09:55.649Z  WARN 29532 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.springBootFramework.controllers.Response> com.springBootFramework.controllers.LibraryController.addBook(com.springBootFramework.controllers.Storage)]
-2024-11-21T18:09:55.735Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book updated successfully
-2024-11-21T18:09:55.787Z  WARN 29532 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.springBootFramework.controllers.LibraryController.updateBook(java.lang.String,com.springBootFramework.controllers.Storage)]
-2024-11-21T18:09:55.807Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:55.925Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:55.941Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:55.948Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:55.973Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book already exists and creation is skipped
-2024-11-21T18:09:55.991Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:56.009Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:56.019Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:56.056Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
-2024-11-21T18:09:56.075Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist and Book is created
-2024-11-21T18:09:56.117Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:56.126Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
-2024-11-21T18:09:56.154Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book/isbn/author/aisle values are empty or check your request
-2024-11-21T18:09:56.168Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist
-2024-11-21T18:09:56.187Z  INFO 29532 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
-2024-11-21T18:09:56.210Z  INFO 29532 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-21T18:09:56.214Z  INFO 29532 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-11-21T18:09:56.239Z  INFO 29532 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T00:03:58.672Z  INFO 25392 --- [spring] [main] com.springBootFramework.Application      : Starting Application using Java 17.0.7 with PID 25392 (C:\Users\karth\Downloads\spring\spring\target\classes started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T00:03:58.699Z  INFO 25392 --- [spring] [main] com.springBootFramework.Application      : The following 1 profile is active: "dev"
+2024-11-22T00:04:00.587Z  INFO 25392 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T00:04:00.756Z  INFO 25392 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interface.
+2024-11-22T00:04:02.202Z  INFO 25392 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-22T00:04:02.223Z  INFO 25392 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T00:04:02.223Z  INFO 25392 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T00:04:02.375Z  INFO 25392 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T00:04:02.376Z  INFO 25392 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3530 ms
+2024-11-22T00:04:02.449Z  INFO 25392 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T00:04:02.797Z  INFO 25392 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-22T00:04:02.800Z  INFO 25392 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T00:04:02.821Z  INFO 25392 --- [spring] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-22T00:04:02.988Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql]
+2024-11-22T00:04:03.026Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE library ( aisle INTEGER, author VARCHAR(255), book_name VARCHAR(255), id VARCHAR(255) NOT NULL, isbn VARCHAR(255), PRIMARY KEY (id) )
+2024-11-22T00:04:03.027Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql] in 38 ms.
+2024-11-22T00:04:03.028Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql]
+2024-11-22T00:04:03.038Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('Pega', '38746gb', '5687', 1, 'Ela')
+2024-11-22T00:04:03.040Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('SAP', 'bjbd7435', '3764', 2, 'Aish')
+2024-11-22T00:04:03.041Z DEBUG 25392 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql] in 12 ms.
+2024-11-22T00:04:03.235Z  INFO 25392 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T00:04:03.503Z  INFO 25392 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T00:04:03.588Z  INFO 25392 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T00:04:04.132Z  INFO 25392 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T00:04:05.476Z  INFO 25392 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T00:04:05.548Z  INFO 25392 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T00:04:06.539Z  WARN 25392 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T00:04:07.656Z  INFO 25392 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-22T00:04:07.683Z  INFO 25392 --- [spring] [main] com.springBootFramework.Application      : Started Application in 9.86 seconds (process running for 10.581)
+2024-11-22T00:06:07.638Z  INFO 25392 --- [spring] [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22T00:06:07.639Z  INFO 25392 --- [spring] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-22T00:06:07.645Z  INFO 25392 --- [spring] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-11-22T00:06:07.944Z  INFO 25392 --- [spring] [http-nio-8081-exec-3] c.s.controllers.LibraryController        : Book exists
+2024-11-22T00:07:36.271Z  INFO 23544 --- [spring] [main] com.springBootFramework.Application      : Starting Application using Java 17.0.7 with PID 23544 (C:\Users\karth\Downloads\spring\spring\target\classes started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T00:07:36.277Z  INFO 23544 --- [spring] [main] com.springBootFramework.Application      : The following 1 profile is active: "dev"
+2024-11-22T00:07:38.144Z  INFO 23544 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T00:07:38.327Z  INFO 23544 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 1 JPA repository interface.
+2024-11-22T00:07:39.929Z  INFO 23544 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-22T00:07:39.947Z  INFO 23544 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T00:07:39.948Z  INFO 23544 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T00:07:40.109Z  INFO 23544 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T00:07:40.111Z  INFO 23544 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3626 ms
+2024-11-22T00:07:40.192Z  INFO 23544 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T00:07:40.592Z  INFO 23544 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-22T00:07:40.597Z  INFO 23544 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T00:07:40.619Z  INFO 23544 --- [spring] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-22T00:07:40.813Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql]
+2024-11-22T00:07:40.843Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE library ( aisle INTEGER, author VARCHAR(255), book_name VARCHAR(255), id VARCHAR(255) NOT NULL, isbn VARCHAR(255), PRIMARY KEY (id) )
+2024-11-22T00:07:40.847Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql] in 30 ms.
+2024-11-22T00:07:40.849Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql]
+2024-11-22T00:07:40.859Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('Pega', '38746gb', '5687', 1, 'Ela')
+2024-11-22T00:07:40.861Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('SAP', 'bjbd7435', '3764', 2, 'Aish')
+2024-11-22T00:07:40.861Z DEBUG 23544 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql] in 11 ms.
+2024-11-22T00:07:41.053Z  INFO 23544 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T00:07:41.250Z  INFO 23544 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T00:07:41.335Z  INFO 23544 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T00:07:41.989Z  INFO 23544 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T00:07:45.165Z  INFO 23544 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T00:07:45.396Z  INFO 23544 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T00:07:46.562Z  WARN 23544 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T00:07:48.255Z  INFO 23544 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-22T00:07:48.321Z  INFO 23544 --- [spring] [main] com.springBootFramework.Application      : Started Application in 13.035 seconds (process running for 13.861)
+2024-11-22T00:09:42.291Z  INFO 23544 --- [spring] [http-nio-8081-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22T00:09:42.291Z  INFO 23544 --- [spring] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-22T00:09:42.295Z  INFO 23544 --- [spring] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-11-22T00:11:34.550Z  INFO 23544 --- [spring] [http-nio-8081-exec-9] c.s.controllers.LibraryController        : Book exists
+2024-11-22T18:39:42.490Z  INFO 21004 --- [spring] [main] com.springBootFramework.Application      : Starting Application using Java 17.0.7 with PID 21004 (C:\Users\karth\Downloads\spring\spring\target\classes started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T18:39:42.500Z  INFO 21004 --- [spring] [main] com.springBootFramework.Application      : The following 1 profile is active: "dev"
+2024-11-22T18:39:44.274Z  INFO 21004 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T18:39:44.443Z  INFO 21004 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2024-11-22T18:39:45.998Z  INFO 21004 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-22T18:39:46.032Z  INFO 21004 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T18:39:46.032Z  INFO 21004 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T18:39:46.209Z  INFO 21004 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T18:39:46.211Z  INFO 21004 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3508 ms
+2024-11-22T18:39:46.293Z  INFO 21004 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T18:39:46.678Z  INFO 21004 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-22T18:39:46.681Z  INFO 21004 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T18:39:46.701Z  INFO 21004 --- [spring] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-22T18:39:46.924Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql]
+2024-11-22T18:39:46.959Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE library ( aisle INTEGER, author VARCHAR(255), book_name VARCHAR(255), id VARCHAR(255) NOT NULL, isbn VARCHAR(255), PRIMARY KEY (id) )
+2024-11-22T18:39:46.965Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql] in 36 ms.
+2024-11-22T18:39:46.972Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql]
+2024-11-22T18:39:46.985Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('Pega', '38746gb', '5687', 1, 'Ela')
+2024-11-22T18:39:46.986Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('SAP', 'bjbd7435', '3764', 2, 'Aish')
+2024-11-22T18:39:46.986Z DEBUG 21004 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql] in 14 ms.
+2024-11-22T18:39:47.323Z  INFO 21004 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T18:39:47.550Z  INFO 21004 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T18:39:47.623Z  INFO 21004 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T18:39:48.282Z  INFO 21004 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T18:39:49.631Z  INFO 21004 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T18:39:49.714Z  INFO 21004 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T18:39:50.512Z  WARN 21004 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T18:39:51.424Z  INFO 21004 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-22T18:39:51.440Z  INFO 21004 --- [spring] [main] com.springBootFramework.Application      : Started Application in 9.8 seconds (process running for 10.577)
+2024-11-22T18:41:23.396Z  INFO 21004 --- [spring] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22T18:41:23.400Z  INFO 21004 --- [spring] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-22T18:41:23.404Z  INFO 21004 --- [spring] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-22T18:48:53.406Z  INFO 21004 --- [spring] [http-nio-8081-exec-10] c.s.controllers.LibraryController        : Book exists
+2024-11-22T18:56:21.671Z  INFO 32084 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 32084 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T18:56:21.676Z  INFO 32084 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T18:56:23.265Z  INFO 32084 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T18:56:23.394Z  INFO 32084 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2024-11-22T18:56:24.328Z  INFO 32084 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T18:56:24.749Z  INFO 32084 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:308d168f-a17f-4eab-8503-a2c707df5b18 user=SA
+2024-11-22T18:56:24.753Z  INFO 32084 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T18:56:25.026Z  INFO 32084 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T18:56:25.144Z  INFO 32084 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T18:56:25.230Z  INFO 32084 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T18:56:25.860Z  INFO 32084 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T18:56:27.141Z  INFO 32084 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T18:56:27.196Z  INFO 32084 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T18:56:28.179Z  WARN 32084 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T18:56:29.180Z  INFO 32084 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 8.113 seconds (process running for 10.403)
+2024-11-22T18:56:30.407Z  INFO 21004 --- [spring] [http-nio-8081-exec-4] c.s.controllers.LibraryController        : Book exists
+2024-11-22T18:56:30.469Z  INFO 32084 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T18:56:30.482Z  INFO 32084 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T18:56:30.488Z  INFO 32084 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:00:11.185Z  INFO 3100 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 3100 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:00:11.187Z  INFO 3100 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:00:12.865Z  INFO 3100 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:00:13.042Z  INFO 3100 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 142 ms. Found 1 JPA repository interface.
+2024-11-22T19:00:14.160Z  INFO 3100 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:00:14.602Z  INFO 3100 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:da801a3f-3d35-4f9f-a7fc-2203b9a97ddb user=SA
+2024-11-22T19:00:14.602Z  INFO 3100 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:00:14.965Z  INFO 3100 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:00:15.135Z  INFO 3100 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:00:15.194Z  INFO 3100 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:00:16.062Z  INFO 3100 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:00:18.652Z  INFO 3100 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:00:18.797Z  INFO 3100 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:00:20.334Z  WARN 3100 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:00:21.434Z  INFO 3100 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 10.95 seconds (process running for 13.349)
+2024-11-22T19:00:22.998Z  INFO 21004 --- [spring] [http-nio-8081-exec-6] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:00:23.148Z  INFO 3100 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:00:23.162Z  INFO 3100 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:00:23.172Z  INFO 3100 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:00:41.410Z  INFO 32400 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 32400 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:00:41.416Z  INFO 32400 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:00:42.910Z  INFO 32400 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:00:43.099Z  INFO 32400 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interface.
+2024-11-22T19:00:44.092Z  INFO 32400 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:00:44.463Z  INFO 32400 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ac1c950e-51ca-4450-ab37-36d00b64e402 user=SA
+2024-11-22T19:00:44.467Z  INFO 32400 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:00:44.726Z  INFO 32400 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:00:44.887Z  INFO 32400 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:00:44.961Z  INFO 32400 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:00:45.555Z  INFO 32400 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:00:47.260Z  INFO 32400 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:00:47.368Z  INFO 32400 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:00:48.961Z  WARN 32400 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:00:50.156Z  INFO 32400 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 9.494 seconds (process running for 11.452)
+2024-11-22T19:00:51.656Z  INFO 21004 --- [spring] [http-nio-8081-exec-8] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:00:51.748Z  INFO 32400 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:00:51.760Z  INFO 32400 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:00:51.787Z  INFO 32400 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:36:43.827Z  INFO 21004 --- [spring] [http-nio-8081-exec-10] c.s.controllers.LibraryController        : Book does not exist and Book is created
+2024-11-22T19:41:07.850Z  INFO 21004 --- [spring] [http-nio-8081-exec-4] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:44:05.460Z  INFO 21132 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 21132 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:44:05.466Z  INFO 21132 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:44:07.072Z  INFO 21132 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:44:07.201Z  INFO 21132 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2024-11-22T19:44:08.108Z  INFO 21132 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:44:08.493Z  INFO 21132 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:15aed8db-8fee-4a73-819d-3a4583345813 user=SA
+2024-11-22T19:44:08.499Z  INFO 21132 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:44:08.840Z  INFO 21132 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:44:09.051Z  INFO 21132 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:44:09.109Z  INFO 21132 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:44:09.788Z  INFO 21132 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:44:11.241Z  INFO 21132 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:44:11.286Z  INFO 21132 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:44:12.328Z  WARN 21132 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:44:13.473Z  INFO 21132 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 8.744 seconds (process running for 10.766)
+2024-11-22T19:44:14.583Z  INFO 21004 --- [spring] [http-nio-8081-exec-6] c.s.controllers.LibraryController        : Book does not exist and Book is created
+2024-11-22T19:44:14.681Z  INFO 21004 --- [spring] [http-nio-8081-exec-7] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:44:14.735Z  INFO 21132 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:44:14.748Z  INFO 21132 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:44:14.754Z  INFO 21132 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:44:44.230Z  INFO 9164 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 9164 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:44:44.234Z  INFO 9164 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:44:45.767Z  INFO 9164 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:44:45.944Z  INFO 9164 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
+2024-11-22T19:44:46.837Z  INFO 9164 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:44:47.276Z  INFO 9164 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:066207e5-2e26-4d02-ac27-9725fb809306 user=SA
+2024-11-22T19:44:47.279Z  INFO 9164 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:44:47.553Z  INFO 9164 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:44:47.700Z  INFO 9164 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:44:47.783Z  INFO 9164 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:44:48.464Z  INFO 9164 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:44:49.772Z  INFO 9164 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:44:49.835Z  INFO 9164 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:44:50.833Z  WARN 9164 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:44:51.671Z  INFO 9164 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 8.06 seconds (process running for 9.824)
+2024-11-22T19:44:52.740Z  INFO 21004 --- [spring] [http-nio-8081-exec-9] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:44:52.811Z  INFO 9164 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:44:52.821Z  INFO 9164 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:44:52.837Z  INFO 9164 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:45:31.746Z  INFO 21004 --- [spring] [http-nio-8081-exec-1] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:46:04.879Z  INFO 25588 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 25588 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:46:04.885Z  INFO 25588 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:46:06.233Z  INFO 25588 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:46:06.393Z  INFO 25588 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 1 JPA repository interface.
+2024-11-22T19:46:07.277Z  INFO 25588 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:46:07.716Z  INFO 25588 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:e9fb9cb2-d5cf-45b4-870a-83e13971ab16 user=SA
+2024-11-22T19:46:07.720Z  INFO 25588 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:46:08.079Z  INFO 25588 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:46:08.269Z  INFO 25588 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:46:08.374Z  INFO 25588 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:46:09.018Z  INFO 25588 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:46:10.230Z  INFO 25588 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:46:10.273Z  INFO 25588 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:46:11.221Z  WARN 25588 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:46:12.127Z  INFO 25588 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 7.886 seconds (process running for 9.628)
+2024-11-22T19:46:13.252Z  INFO 21004 --- [spring] [http-nio-8081-exec-3] c.s.controllers.LibraryController        : Book already exists and creation is skipped
+2024-11-22T19:46:13.325Z  INFO 21004 --- [spring] [http-nio-8081-exec-4] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:46:13.353Z  INFO 25588 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:46:13.365Z  INFO 25588 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:46:13.368Z  INFO 25588 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:46:39.872Z  INFO 32364 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 32364 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:46:39.887Z  INFO 32364 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:46:41.474Z  INFO 32364 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:46:41.596Z  INFO 32364 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-11-22T19:46:42.523Z  INFO 32364 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:46:42.915Z  INFO 32364 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0efaa3ce-74ce-46fa-b81f-cfccc45aa336 user=SA
+2024-11-22T19:46:42.926Z  INFO 32364 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:46:43.155Z  INFO 32364 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:46:43.341Z  INFO 32364 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:46:43.430Z  INFO 32364 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:46:44.078Z  INFO 32364 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:46:45.238Z  INFO 32364 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:46:45.291Z  INFO 32364 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:46:46.198Z  WARN 32364 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:46:47.145Z  INFO 32364 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 8.031 seconds (process running for 9.885)
+2024-11-22T19:46:48.376Z  INFO 32364 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:46:48.386Z  INFO 32364 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:46:48.391Z  INFO 32364 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:46:57.062Z  INFO 29940 --- [spring] [main] com.springBootFramework.Application      : Starting Application using Java 17.0.7 with PID 29940 (C:\Users\karth\Downloads\spring\spring\target\classes started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:46:57.074Z  INFO 29940 --- [spring] [main] com.springBootFramework.Application      : The following 1 profile is active: "dev"
+2024-11-22T19:46:58.626Z  INFO 29940 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:46:58.766Z  INFO 29940 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2024-11-22T19:47:00.298Z  INFO 29940 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-22T19:47:00.318Z  INFO 29940 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T19:47:00.319Z  INFO 29940 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T19:47:00.465Z  INFO 29940 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T19:47:00.466Z  INFO 29940 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3246 ms
+2024-11-22T19:47:00.538Z  INFO 29940 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:47:00.897Z  INFO 29940 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-22T19:47:00.901Z  INFO 29940 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:47:00.921Z  INFO 29940 --- [spring] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-22T19:47:01.116Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql]
+2024-11-22T19:47:01.138Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE library ( aisle INTEGER, author VARCHAR(255), book_name VARCHAR(255), id VARCHAR(255) NOT NULL, isbn VARCHAR(255), PRIMARY KEY (id) )
+2024-11-22T19:47:01.142Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql] in 22 ms.
+2024-11-22T19:47:01.145Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql]
+2024-11-22T19:47:01.154Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('Pega', '38746gb', '5687', 1, 'Ela')
+2024-11-22T19:47:01.156Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('SAP', 'bjbd7435', '3764', 2, 'Aish')
+2024-11-22T19:47:01.157Z DEBUG 29940 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql] in 10 ms.
+2024-11-22T19:47:01.338Z  INFO 29940 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:47:01.493Z  INFO 29940 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:47:01.554Z  INFO 29940 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:47:02.094Z  INFO 29940 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:47:03.308Z  INFO 29940 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:47:03.377Z  INFO 29940 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:47:04.143Z  WARN 29940 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:47:04.905Z  INFO 29940 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-22T19:47:04.930Z  INFO 29940 --- [spring] [main] com.springBootFramework.Application      : Started Application in 8.744 seconds (process running for 9.418)
+2024-11-22T19:47:25.557Z  INFO 29384 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 29384 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:47:25.562Z  INFO 29384 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:47:26.857Z  INFO 29384 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:47:26.966Z  INFO 29384 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2024-11-22T19:47:27.835Z  INFO 29384 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:47:28.257Z  INFO 29384 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ecba0157-7908-4163-9399-6da64d9342dc user=SA
+2024-11-22T19:47:28.259Z  INFO 29384 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:47:28.529Z  INFO 29384 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:47:28.671Z  INFO 29384 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:47:28.738Z  INFO 29384 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:47:29.362Z  INFO 29384 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:47:30.609Z  INFO 29384 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:47:30.652Z  INFO 29384 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:47:31.592Z  WARN 29384 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:47:32.452Z  INFO 29384 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 7.546 seconds (process running for 9.414)
+2024-11-22T19:47:33.542Z  INFO 29940 --- [spring] [http-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22T19:47:33.543Z  INFO 29940 --- [spring] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-22T19:47:33.546Z  INFO 29940 --- [spring] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-22T19:47:33.934Z  INFO 29940 --- [spring] [http-nio-8081-exec-4] c.s.controllers.LibraryController        : Book does not exist and Book is created
+2024-11-22T19:47:34.187Z  INFO 29940 --- [spring] [http-nio-8081-exec-3] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:47:34.238Z  INFO 29384 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:47:34.246Z  INFO 29384 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:47:34.253Z  INFO 29384 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:48:19.231Z  INFO 29940 --- [spring] [http-nio-8081-exec-8] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:48:51.161Z  INFO 31608 --- [spring] [main] com.springBootFramework.Application      : Starting Application using Java 17.0.7 with PID 31608 (C:\Users\karth\Downloads\spring\spring\target\classes started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:48:51.168Z  INFO 31608 --- [spring] [main] com.springBootFramework.Application      : The following 1 profile is active: "dev"
+2024-11-22T19:48:52.911Z  INFO 31608 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:48:53.099Z  INFO 31608 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
+2024-11-22T19:48:54.551Z  INFO 31608 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-22T19:48:54.579Z  INFO 31608 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T19:48:54.579Z  INFO 31608 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T19:48:54.752Z  INFO 31608 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T19:48:54.753Z  INFO 31608 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3403 ms
+2024-11-22T19:48:54.853Z  INFO 31608 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:48:55.269Z  INFO 31608 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-22T19:48:55.280Z  INFO 31608 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:48:55.301Z  INFO 31608 --- [spring] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-22T19:48:55.459Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql]
+2024-11-22T19:48:55.498Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE library ( aisle INTEGER, author VARCHAR(255), book_name VARCHAR(255), id VARCHAR(255) NOT NULL, isbn VARCHAR(255), PRIMARY KEY (id) )
+2024-11-22T19:48:55.502Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\schema.sql] in 39 ms.
+2024-11-22T19:48:55.505Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql]
+2024-11-22T19:48:55.514Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('Pega', '38746gb', '5687', 1, 'Ela')
+2024-11-22T19:48:55.530Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: insert into library(book_name, id, isbn, aisle, author) values('SAP', 'bjbd7435', '3764', 2, 'Aish')
+2024-11-22T19:48:55.531Z DEBUG 31608 --- [spring] [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\karth\Downloads\spring\spring\target\classes\data.sql] in 26 ms.
+2024-11-22T19:48:55.730Z  INFO 31608 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:48:55.937Z  INFO 31608 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:48:56.068Z  INFO 31608 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:48:56.609Z  INFO 31608 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:48:57.809Z  INFO 31608 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:48:57.881Z  INFO 31608 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:48:58.720Z  WARN 31608 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:48:59.559Z  INFO 31608 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-22T19:48:59.581Z  INFO 31608 --- [spring] [main] com.springBootFramework.Application      : Started Application in 9.277 seconds (process running for 9.972)
+2024-11-22T19:49:15.027Z  INFO 15004 --- [spring] [main] com.springBootFramework.TestIT           : Starting TestIT using Java 17.0.7 with PID 15004 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:49:15.035Z  INFO 15004 --- [spring] [main] com.springBootFramework.TestIT           : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:49:16.553Z  INFO 15004 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:49:16.716Z  INFO 15004 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2024-11-22T19:49:17.629Z  INFO 15004 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:49:18.092Z  INFO 15004 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0a0ea9b5-c38e-46fc-b701-f137daac5a86 user=SA
+2024-11-22T19:49:18.101Z  INFO 15004 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:49:18.404Z  INFO 15004 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:49:18.567Z  INFO 15004 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:49:18.620Z  INFO 15004 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:49:19.315Z  INFO 15004 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:49:20.545Z  INFO 15004 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:49:20.590Z  INFO 15004 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:49:21.549Z  WARN 15004 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:49:22.425Z  INFO 15004 --- [spring] [main] com.springBootFramework.TestIT           : Started TestIT in 7.995 seconds (process running for 9.866)
+2024-11-22T19:49:23.579Z  INFO 31608 --- [spring] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-22T19:49:23.580Z  INFO 31608 --- [spring] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-22T19:49:23.582Z  INFO 31608 --- [spring] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-22T19:49:23.972Z  INFO 31608 --- [spring] [http-nio-8081-exec-1] c.s.controllers.LibraryController        : Book does not exist and Book is created
+2024-11-22T19:49:24.234Z  INFO 31608 --- [spring] [http-nio-8081-exec-2] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:24.259Z  INFO 15004 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:49:24.269Z  INFO 15004 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:49:24.284Z  INFO 15004 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T19:49:38.418Z  INFO 18648 --- [spring] [main] c.springBootFramework.ApplicationTests   : Starting ApplicationTests using Java 17.0.7 with PID 18648 (started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T19:49:38.423Z  INFO 18648 --- [spring] [main] c.springBootFramework.ApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T19:49:39.722Z  INFO 18648 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T19:49:39.880Z  INFO 18648 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+2024-11-22T19:49:42.839Z  INFO 18648 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T19:49:43.293Z  INFO 18648 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0275864e-c1d7-4f1d-b58c-88f72d772514 user=SA
+2024-11-22T19:49:43.299Z  INFO 18648 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T19:49:43.700Z  INFO 18648 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T19:49:43.929Z  INFO 18648 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T19:49:44.079Z  INFO 18648 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T19:49:44.493Z  INFO 18648 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T19:49:46.076Z  INFO 18648 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T19:49:46.116Z  INFO 18648 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:49:46.595Z  WARN 18648 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T19:49:47.638Z  INFO 18648 --- [spring] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-11-22T19:49:47.639Z  INFO 18648 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-11-22T19:49:47.643Z  INFO 18648 --- [spring] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2024-11-22T19:49:47.717Z  INFO 18648 --- [spring] [main] c.springBootFramework.ApplicationTests   : Started ApplicationTests in 9.903 seconds (process running for 11.948)
+2024-11-22T19:49:48.211Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Enter valid inputs
+2024-11-22T19:49:48.326Z  WARN 18648 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.springBootFramework.controllers.Response> com.springBootFramework.controllers.LibraryController.addBook(com.springBootFramework.controllers.Storage)]
+2024-11-22T19:49:48.423Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book updated successfully
+2024-11-22T19:49:48.472Z  WARN 18648 --- [spring] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> com.springBootFramework.controllers.LibraryController.updateBook(java.lang.String,com.springBootFramework.controllers.Storage)]
+2024-11-22T19:49:48.491Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.664Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.685Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.694Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.718Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book already exists and creation is skipped
+2024-11-22T19:49:48.743Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.763Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.784Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.823Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
+2024-11-22T19:49:48.840Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist and Book is created
+2024-11-22T19:49:48.883Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.890Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book exists
+2024-11-22T19:49:48.915Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book/isbn/author/aisle values are empty or check your request
+2024-11-22T19:49:48.925Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book does not exist
+2024-11-22T19:49:48.949Z  INFO 18648 --- [spring] [main] c.s.controllers.LibraryController        : Book deleted successfully
+2024-11-22T19:49:48.983Z  INFO 18648 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T19:49:48.992Z  INFO 18648 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-22T19:49:48.999Z  INFO 18648 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-22T20:06:37.841Z  INFO 21528 --- [spring] [main] com.springBootFramework.Application      : Starting Application using Java 21.0.4 with PID 21528 (C:\Users\karth\Downloads\spring\spring\target\classes started by Aishwarya K in C:\Users\karth\Downloads\spring\spring)
+2024-11-22T20:06:37.852Z  INFO 21528 --- [spring] [main] com.springBootFramework.Application      : No active profile set, falling back to 1 default profile: "default"
+2024-11-22T20:06:38.760Z  INFO 21528 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-22T20:06:38.852Z  INFO 21528 --- [spring] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-11-22T20:06:39.539Z  INFO 21528 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-22T20:06:39.555Z  INFO 21528 --- [spring] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-22T20:06:39.555Z  INFO 21528 --- [spring] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-22T20:06:39.655Z  INFO 21528 --- [spring] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-22T20:06:39.655Z  INFO 21528 --- [spring] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1726 ms
+2024-11-22T20:06:39.793Z  INFO 21528 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-22T20:06:40.009Z  INFO 21528 --- [spring] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:5a1946ee-fda5-45ad-a048-842db1770a6b user=SA
+2024-11-22T20:06:40.015Z  INFO 21528 --- [spring] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-22T20:06:40.170Z  INFO 21528 --- [spring] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-22T20:06:40.246Z  INFO 21528 --- [spring] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-22T20:06:40.285Z  INFO 21528 --- [spring] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-22T20:06:40.635Z  INFO 21528 --- [spring] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-22T20:06:41.718Z  INFO 21528 --- [spring] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-22T20:06:41.782Z  INFO 21528 --- [spring] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-22T20:06:42.209Z  WARN 21528 --- [spring] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-22T20:06:42.661Z  INFO 21528 --- [spring] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-22T20:06:42.667Z  INFO 21528 --- [spring] [main] com.springBootFramework.Application      : Started Application in 5.436 seconds (process running for 5.96)

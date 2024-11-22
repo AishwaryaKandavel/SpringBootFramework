@@ -1,0 +1,2 @@
+insert into library(book_name, id, isbn, aisle, author) values('Pega', '38746gb', '5687', 1, 'Ela'); 
+insert into library(book_name, id, isbn, aisle, author) values('SAP', 'bjbd7435', '3764', 2, 'Aish'); 

@@ -21,6 +21,7 @@ public class LibraryServices {
 		return repo.findById(id).isPresent();
 	}
 	public Storage getBookById(String id) {
+		System.out.println(id);
 		return repo.findById(id).get();
 	}
 }
