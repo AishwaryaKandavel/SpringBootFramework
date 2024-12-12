@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Library Management System</title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Library Management System</h1>
+		<p>Welcome to the Library Management System. Select an option below:</p>
+		<div class="button-container">
+			<a th:href="@{/add-book}">Add Book</a>
+			<a th:href="@{/get-book}">Get Book</a>
+			<a th:href="@{/update-book}">Update Book</a>
+			<a th:href="@{/delete-book}">Delete Book</a>
+			<a href="/viewAllBooks">View All Books</a> <!-- New Option -->
+			<a href="/manageUsers">Manage Users</a> <!-- New Option -->
+			<a href="/loanBook">Loan Book</a> <!-- New Option -->
+			<a href="/returnBook">Return Book</a> <!-- New Option -->
+		</div>
+	</div>
+	<div class="footer">
+		© 2024 Library System
+	</div>
+</body>
+
+</html>
