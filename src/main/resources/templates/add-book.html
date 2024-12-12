@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Book</title>
-    <link rel="stylesheet" href="/css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Add Book</title>
+	<link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <div class="form-container">
-        <h2>Add Book</h2>
-        <form th:action="@{/addbook}" method="post">
-            <div class="form-group">
-                <label for="isbn">ISBN:</label>
-                <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN" required>
-            </div>
-            <div class="form-group">
-                <label for="aisle">Aisle:</label>
-                <input type="text" id="aisle" name="aisle" placeholder="Enter Aisle" required>
-            </div>
-            <div class="form-group">
-                <label for="author">Author:</label>
-                <input type="text" id="author" name="author" placeholder="Enter Author" required>
-            </div>
-            <div class="form-group">
-                <label for="title">Book Title:</label>
-                <input type="text" id="title" name="title" placeholder="Enter Book Title" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Add Book</button>
-            </div>
-        </form>
-        <form action="/home" method="GET">
-            <div class="form-group">
-                <button type="submit" style="background-color: #007BFF;">Back to Home</button>
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        © 2024 Library System
-    </div>
+	<div class="form-container">
+		<h2>Add Book</h2>
+		<form th:action="@{/addbook-ui}" method="post">
+			<div class="form-group">
+				<label for="isbn">ISBN:</label>
+				<input type="text" id="isbn" name="isbn" placeholder="Enter ISBN" required>
+			</div>
+			<div class="form-group">
+				<label for="aisle">Aisle:</label>
+				<input type="text" id="aisle" name="aisle" placeholder="Enter Aisle" required>
+			</div>
+			<div class="form-group">
+				<label for="author">Author:</label>
+				<input type="text" id="author" name="author" placeholder="Enter Author" required>
+			</div>
+			<div class="form-group">
+				<label for="title">Book Title:</label>
+				<input type="text" id="book" name="book" placeholder="Enter Book Title" required>
+			</div>
+			<div class="form-group">
+				<button type="submit">Add Book</button>
+			</div>
+		</form>
+		<form action="/home" method="GET">
+			<div class="form-group">
+				<button type="submit" style="background-color: #007BFF;">Back to Home</button>
+			</div>
+		</form>
+		<div th:if="${message}" class="alert">
+			<p th:text="${message}"></p>
+		</div>
+	</div>
+	<div class="footer">
+		© 2024 Library System
+	</div>
 </body>
+
 </html>

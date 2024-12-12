@@ -12,11 +12,6 @@ public class HomeController {
      return "home"; // Returns the name of the Thymeleaf template (home.html)
  }
 
- @GetMapping("/add-book")
- public String addBookPage(Model model) {
-     return "add-book"; // Template for adding a book
- }
-
  @GetMapping("/get-book")
  public String getBookPage(Model model) {
      return "get-book"; // Template for fetching book details
