@@ -36,9 +36,13 @@ public class AddBookUIController {
             // Call the REST API to add the book
         	
             ResponseEntity<Response> response = libraryController.addBook(newBook);
-            model.addAttribute(response.getBody().getId()+" "+response.getBody().getMsg());
+            String message = "Book ID: "+response.getBody().getId();
+            System.out.println(message);
+            model.addAttribute("message1", response.getBody().getMsg());
+            model.addAttribute("message2", message);
+            System.out.println(model.asMap());
         } catch (Exception e) {
-            model.addAttribute("message", "Error while adding book: " + e.getMessage());
+            model.addAttribute("message1", "Error while adding book: " + e.getMessage());
         }
 
         return "add-book"; // Return to the same page with the message

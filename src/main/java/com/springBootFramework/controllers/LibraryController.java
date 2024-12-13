@@ -54,7 +54,7 @@ public class LibraryController {
 				if (!services.checkIfBookIsPresent(id)) {
 
 					repo.save(storage);
-					addBookResp.setMsg("Success Book is Added");
+					addBookResp.setMsg("Book is added successfully");
 					logger.info("Book does not exist and Book is created");
 					return new ResponseEntity<Response>(addBookResp, header, HttpStatus.CREATED);
 				} else {
